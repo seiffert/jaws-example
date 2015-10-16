@@ -14,6 +14,14 @@
         "jawsBucket": "jaws.dev.euwest1.lambdatoslack.paul-seiffert.de",
         "restApiId": "5e32fljgvk"
       }
+    ],
+    "test": [
+      {
+        "region": "eu-west-1",
+        "iamRoleArnLambda": "arn:aws:iam::363958861857:role/test-lambdaToSlack-r-IamRoleLambda-15R8QZ8RPL0XD",
+        "iamRoleArnApiGateway": "arn:aws:iam::363958861857:role/test-lambdaToSlack-r-IamRoleApiGateway-1IAI4J7FC645J",
+        "jawsBucket": "jaws.test.euwest1.lambdatoslack.paul-seiffert.de"
+      }
     ]
   }
 }
