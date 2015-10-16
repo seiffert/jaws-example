@@ -7,7 +7,8 @@ language: node_js
 
 after_success:
   - npm install jaws-framework -g
-  - printf "[travis]\naws_access_key_id = $(AWS_ACCESS_KEY_ID)\naws_secret_access_key=$(AWS_SECRET_ACCESS_KEY)" > ~/.aws/credentials
+  - mkdir -p ~/.aws
+  - printf "[travis]\naws_access_key_id = $AWS_ACCESS_KEY_ID\naws_secret_access_key=$AWS_SECRET_ACCESS_KEY" > ~/.aws/credentials
   - printf "ADMIN_AWS_PROFILE=travis" >> admin.env
   - jaws tag -a
   - jaws deploy lambda --tags
