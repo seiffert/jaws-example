@@ -1,0 +1,19 @@
+{
+  "name": "lambdaToSlack",
+  "version": "0.0.1",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "",
+  "domain": "lambdatoslack.paul-seiffert.de",
+  "stages": {
+    "dev": [
+      {
+        "region": "eu-west-1",
+        "iamRoleArnLambda": "arn:aws:iam::363958861857:role/dev-lambdaToSlack-r-IamRoleLambda-16GBYIU6SAEDQ",
+        "iamRoleArnApiGateway": "arn:aws:iam::363958861857:role/dev-lambdaToSlack-r-IamRoleApiGateway-8TFU8A92IVQB",
+        "jawsBucket": "jaws.dev.euwest1.lambdatoslack.paul-seiffert.de",
+        "restApiId": "5e32fljgvk"
+      }
+    ]
+  }
+}
