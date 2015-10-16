@@ -10,7 +10,7 @@ after_success:
   - mkdir -p ~/.aws
   - printf "[travis]\naws_access_key_id = $AWS_ACCESS_KEY_ID\naws_secret_access_key=$AWS_SECRET_ACCESS_KEY" > ~/.aws/credentials
   - printf "ADMIN_AWS_PROFILE=travis" >> admin.env
-  - jaws tag -a
+  - jaws tag -a lambda && jaws tag -a endpoint
   - jaws deploy lambda test --tags
   - jaws deploy endpoint test --tags
   - jaws deploy resources test --tags
